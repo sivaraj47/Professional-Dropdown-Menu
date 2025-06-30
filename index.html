@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Professional Drop down Menu | #codingwithssr</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title> Professional Card Design |Card Template Design |Card Website Design | Responsive Card Design | Professional Flex Card Design</title>    
+    <meta name="description" content="The dropdown navigation or menu design is developed by html, css and jquery coding used to developed it and fully responsive design  more user friendly for the developer or designers." />
+	
+	<meta name="keywords" content="codingwithssr, flexcard design, card design, responsive navgiation design, responsive dropdown menu, ssr, sivasundararaj, template in flex, flex layout, flex card design, professional dropdown menu html css with source code, professional dropdown menu  html css w3schools, professional dropdown menu html css free, professional dropdown menu html css example, professional dropdown menu html css codepen, html, css dropdown menu responsive, business dropdown menu html css codepen, business dropdown menu html template free, html css dropdown menu responsive w3schools,  html css dropdown menu responsive example, html css dropdown menu responsive codepen, html css dropdown menu codepen, how to create dropdown menu in html, responsive cards css, professional dropdown menu design responsive,
+html dropdown menu, html dropdown menu, html css dropdown menu,
+Professional dropdown menu design html css free, Professional dropdown menu design html css example, html, css dropdown menu responsive,
+dropdown menu design html css codepen, dropdown menu html css,
+card css design, professional dropdown menu html css card layout responsive, professional dropdown menu design html css template free download, professional dropdown menu design html css profile, professional dropdown menu design html css responsive, professional dropdown menu design html css responsive free template, professional dropdown menu design html css layout template, professional dropdown menu design html css template free download, professional dropdown menu design html css template free, 
+professional dropdown menu design html css source code, professional dropdown menu design html css source code free, professional dropdown menu design html css source code free download, professional dropdown menu design html css responsive template free, professional dropdown menu design html css responsive infographic, professional dropdown menu design html css flex layout, professional dropdown menu design html css flex layout codepen, professional dropdown menu design html css codepen,  professional dropdown menu html css codepen, professional dropdown menu html css free download, professional dropdown menu html css, info dropdown menu html css codepen,responsive dropdown menu design html css codepen,
+ Professional Drop down list in HTML CSS,
+Professional drop down menu html css w3schools,
+Professional drop down menu html css example,
+Professional drop-down navigation menu html,
+Responsive drop down menu with submenu,
+Professional Dropdown menu CSS,
+Professional Dropdown menu Bootstrap,
+Professional CSS dropdown on click,
+
+" />
+	
+	<meta name="author" content="https://codepen.io/codingwithssr" />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KL9C7XQPJP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KL9C7XQPJP');
+</script>
+<!-- Google tag (gtag.js) this script for promote the code in google analytics-->
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M3N8GX9J');</script>
+<!-- End Google Tag Manager -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+
+
+<nav class="header">
+  <a href="" class="logo">CODINGWITHSSR</a>
+  <button class="mbtn" id="mobilebtn">Menu</button>
+  <ul class="menu" id="menus">
+    <li><a href="">Home</a></li>
+    <li><a href="">About</a></li>
+     <li  class="has-dropdown">
+       <a href="" id="service">Service <span class="arrow">&#9660;</span></a>
+       <ul class="dropdown" id="dropdown">
+         <li><a href="#">Service1</a></li>
+          <li><a href="#">Service2</a></li>
+           <li><a href="#" id="more">More...<span class="arrow">&#9660;</span></a>
+             <ul class="subdropdown" id="subdropdown">
+         <li><a href="#">sub1</a></li>
+        <li><a href="#">sub2</a></li>
+       </ul>
+           </li>
+       </ul>
+     </li>
+  </ul>  
+</nav>
+
+<script>
+  $(document).ready(function(){
+   $("#mobilebtn").click(function(){
+     $("#menus").toggleClass("show");
+   });
+     $("#service").click(function(e){
+        e.preventDefault(); 
+      $(this).find('.arrow').toggleClass('rotate');
+     $("#dropdown").toggleClass("shows");
+   });
+      $("#more").click(function(e){
+        e.preventDefault(); 
+      $(this).find('.arrow').toggleClass('rotate');
+     $("#subdropdown").toggleClass("showss");
+   });
+});
+</script>
+<!-- partial -->
+  
+</body>
+</html>

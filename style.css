@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.header{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:space-around;
+  background:linear-gradient(45deg, #5a5aff, #cd25f7);
+  padding:15px 0px;
+  width:100%;   
+  border-radius:10px; 
+  font-family:"Inter", sanserif;
+}
+.logo{
+  text-decoration:none;
+  font-size:20px;
+  color:#fff;
+}
+.menu{
+  display:flex;
+  list-style:none; 
+  gap: 10px;   
+}
+ul{
+  padding:0;
+  margin:0;
+}
+ul li a{
+  text-decoration:none;
+  padding:10px 30px;
+  color:#fff;
+  font-weight:500;
+}
+
+.menu a:hover{
+  background:#333333;
+  border-radius:5px; 
+}
+.mbtn{
+    display:none;
+  }
+.arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.rotate {
+  transform: rotate(180deg);
+}
+.dropdown{
+  display:none;
+position:absolute;
+ background:linear-gradient(45deg, #5a5aff, #cd25f7);
+  list-style:none;
+  margin-top:10px;
+  padding:5px 2px;
+  border-radius:5px; 
+  transition: opacity .3 ease, transform 0.3 ease;
+  transform:translateY(-20px);
+  box-shadow:0px 4px 5px 8px rgba(0,0,0,0.1);
+  opacity:0;
+  z-index:99; 
+}
+.subdropdown{
+  display:none;
+position:absolute;
+  right:-105px;
+  bottom:-50px;
+ background:linear-gradient(45deg, #5a5aff, #cd25f7); 
+  list-style:none;
+  margin-top:10px;
+  padding:5px 2px;
+  border-radius:5px; 
+  transition: opacity .3 ease, transform 0.3 ease;
+  transform:translateY(-20px);
+  box-shadow:0px 4px 5px 8px rgba(0,0,0,0.1);
+  opacity:0;
+  z-index:-1;font-weight:500;
+}
+.dropdown li  {
+  padding:10px 4px;
+  white-space: nowrap;
+}
+.shows{
+  display:block;
+  opacity: 1;
+  transform: translateY(0);
+}
+.showss{
+  display:block;
+  opacity: 1;
+  transform: translateY(0);
+}
+@media(max-width:768px){
+  .mbtn{
+    display:block;
+    padding: 10px;
+        border-radius: 3px;
+        font-family: 'Inter';
+        border: none;
+  }
+  .menu{
+    display:none;
+    flex-direction:column;
+    margin-top:30px;
+    width:100%;    
+    text-align:center;
+  }
+  .menu.show{
+    display:flex;/*block*/
+  }
+  ul li {
+    padding:10px;
+
+  }
+  .dropdown{
+    position:static; 
+transition: .3s ease;  
+    pointer-events: auto;
+  }
+  
+  .subdropdown{
+ position:static; 
+transition: .3s ease;  
+  }
+  .menu a:hover{
+  background:#444;
+  border-radius:5px; 
+    width:100%;    
+}
+}
